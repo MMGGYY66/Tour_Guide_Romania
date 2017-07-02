@@ -26,11 +26,11 @@ import java.util.ArrayList;
 
             // Create a list of attractions
             final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
+            attractions.add(new Attraction(R.string.wooden_churches_of_maramures, R.string.wooden_churches_of_maramures_description, R.drawable.maramures_wooden_churches));
+            attractions.add(new Attraction(R.string.painted_monasteries_of_bucovina, R.string.painted_monasteries_of_bucovina_description, R.drawable.voronet_painted_monastery_of_bucovina));
             attractions.add(new Attraction(R.string.horezu_monastery, R.string.horezu_monastery_description, R.drawable.horezu_monastery));
             attractions.add(new Attraction(R.string.medieval_fortified_churches_of_transylvania, R.string.medieval_fortified_churches_of_transylvania_description, R.drawable.calnic_fortress));
             attractions.add(new Attraction(R.string.historic_centre_of_sighisoara, R.string.historic_centre_of_sighisoara_description, R.drawable.unesco_world_heritage_site_sighisoara));
-            attractions.add(new Attraction(R.string.painted_monasteries_of_bucovina, R.string.painted_monasteries_of_bucovina_description, R.drawable.voronet_painted_monastery_of_bucovina));
-            attractions.add(new Attraction(R.string.wooden_churches_of_maramures, R.string.wooden_churches_of_maramures_description, R.drawable.maramures_wooden_churches));
             attractions.add(new Attraction(R.string.dacian_fortress, R.string.dacian_fortress_description, R.drawable.sarmizegetusa_regia_dacian_fortress));
 
             // Create an {@link WordAdapter}, whose data source is a list of {@link Attraction}s. The
@@ -47,6 +47,5 @@ import java.util.ArrayList;
             listView.setAdapter(adapter);
 
             return rootView;
-
         }
     }

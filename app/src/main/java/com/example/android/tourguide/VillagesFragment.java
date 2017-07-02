@@ -44,7 +44,6 @@ public class VillagesFragment extends Fragment {
         listView.setAdapter(adapter);
 
         return rootView;
-
     }
 }
 

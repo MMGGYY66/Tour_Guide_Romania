@@ -26,12 +26,12 @@ import java.util.ArrayList;
 
             // Create a list of attractions
             final ArrayList<Attraction> attractions = new ArrayList<Attraction>();
+            attractions.add(new Attraction(R.string.piatra_craiului, R.string.piatra_craiului_description, R.drawable.piatra_craiului_national_park));
+            attractions.add(new Attraction(R.string.retezat_national_park, R.string.retezat_national_park_description, R.drawable.retezat_national_park));
+            attractions.add(new Attraction(R.string.ceahlau_national_park, R.string.ceahlau_national_park_description, R.drawable.ceahlau_national_park));
             attractions.add(new Attraction(R.string.apuseni_nature_park, R.string.apuseni_nature_park_description, R.drawable.apuseni_nature_park));
             attractions.add(new Attraction(R.string.bicazului_gorges, R.string.bicazului_gorges_description, R.drawable.bicazului_gorges));
             attractions.add(new Attraction(R.string.calimani_national_park, R.string.calimani_national_park_description, R.drawable.calimani_mountains));
-            attractions.add(new Attraction(R.string.ceahlau_national_park, R.string.ceahlau_national_park_description, R.drawable.ceahlau_national_park));
-            attractions.add(new Attraction(R.string.piatra_craiului, R.string.piatra_craiului_description, R.drawable.piatra_craiului_national_park));
-            attractions.add(new Attraction(R.string.retezat_national_park, R.string.retezat_national_park_description, R.drawable.retezat_national_park));
             attractions.add(new Attraction(R.string.transfagarasan, R.string.transfagarasan_description, R.drawable.transfagarasan));
             attractions.add(new Attraction(R.string.transalpina, R.string.transalpina_description, R.drawable.transalpina));
             attractions.add(new Attraction(R.string.transbucegi, R.string.transbucegi_description, R.drawable.transbucegi));
@@ -50,7 +50,6 @@ import java.util.ArrayList;
             listView.setAdapter(adapter);
 
             return rootView;
-
         }
     }
 

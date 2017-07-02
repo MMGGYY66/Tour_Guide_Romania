@@ -53,7 +53,6 @@ import java.util.ArrayList;
             listView.setAdapter(adapter);
 
             return rootView;
-
         }
     }
 
