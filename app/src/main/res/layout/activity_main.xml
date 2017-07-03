@@ -11,7 +11,7 @@
         style="@style/CategoryTab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffff1f"/>
+        android:background="@color/background_color_tablayout"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

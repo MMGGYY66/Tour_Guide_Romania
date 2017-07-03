@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -12,13 +12,13 @@
     <!-- First screen application theme. -->
     <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimaryDark">#98ef17</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_MyTheme</item>
     </style>
 
     <!-- Style for a tab that displays a category name -->
     <style name="CategoryTab" parent="Widget.Design.TabLayout">
-        <item name="tabIndicatorColor">#007300</item>
-        <item name="tabSelectedTextColor">#007300</item>
+        <item name="tabIndicatorColor">@color/tabIndicatorColor</item>
+        <item name="tabSelectedTextColor">@color/tabSelectedTextColor</item>
         <item name="tabTextAppearance">@style/TabLayoutTextStyle</item>
         <item name="tabMode">scrollable</item>
         <item name="tabBackground">?attr/selectableItemBackground</item>
@@ -26,9 +26,41 @@
 
     <!-- Text appearance style for a category tab -->
     <style name="TabLayoutTextStyle">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/textSize_TabLayoutTextStyle</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#A8A19E</item>
+        <item name="android:textColor">@color/tabLayoutTextStyle_Color</item>
+
+    </style>
+
+    <!-- Style for the text container -->
+    <style name="TextContainer">
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+        <item name="android:paddingRight">@dimen/padding_small</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+    </style>
+
+    <!-- Style for the title of the list item -->
+    <style name="TitleListItem">
+        <item name="android:gravity">top</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/textColor_list_item</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingRight">@dimen/padding_small</item>
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+        <item name="android:textSize">@dimen/textSize_title_list_item</item>
+    </style>
+
+    <!-- Style for the description of the list item -->
+    <style name="DescriptionListItem">
+        <item name="android:gravity">bottom</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingRight">@dimen/padding_small</item>
+        <item name="android:paddingLeft">@dimen/padding_medium</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:textSize">@dimen/textSize_description_list_item</item>
     </style>
 
 </resources>

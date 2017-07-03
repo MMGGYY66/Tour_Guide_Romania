@@ -15,44 +15,28 @@
 
         <RelativeLayout
             android:id="@+id/text_container"
+            style="@style/TextContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="10dp"
-            android:paddingRight="8dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
             android:layout_below="@+id/image">
 
             <TextView
                 android:id="@+id/title"
+                style="@style/TitleListItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="top"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#007300"
-                android:textStyle="bold"
-                tools:text=""
-                android:paddingRight="8dp"
-                android:paddingLeft="10dp"
-                android:textSize="18sp"/>
+                tools:text="" />
 
             <TextView
                 android:id="@+id/description"
+                style="@style/DescriptionListItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title"
                 android:layout_weight="1"
-                android:gravity="bottom"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@android:color/black"
-                tools:text=""
-                android:paddingRight="8dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:textSize="16sp"/>
+                tools:text="" />
 
         </RelativeLayout>
 
