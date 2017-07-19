@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-public class    PagerAdapter extends FragmentPagerAdapter {
+public class PagerAdapter extends FragmentPagerAdapter {
 
     /**
      * Context of the app
@@ -20,7 +20,7 @@ public class    PagerAdapter extends FragmentPagerAdapter {
      *                across swipes.
      */
     public PagerAdapter(Context context, FragmentManager fm) {
-        super(fm);
+        super ( fm );
         mContext = context;
 
     }
@@ -31,17 +31,17 @@ public class    PagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new CitiesFragment();
+            return new CitiesFragment ();
         } else if (position == 1) {
-            return new CastlesFragment();
+            return new CastlesFragment ();
         } else if (position == 2) {
-            return new MountainsFragment();
+            return new MountainsFragment ();
         } else if (position == 3) {
-            return new MonasteriesFragment();
+            return new MonasteriesFragment ();
         } else if (position == 4) {
-            return new UnescoSitesFragment();
+            return new UnescoSitesFragment ();
         } else {
-            return new VillagesFragment();
+            return new VillagesFragment ();
         }
     }
 
@@ -56,17 +56,17 @@ public class    PagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return mContext.getString(R.string.category_cities);
+            return mContext.getString ( R.string.category_cities );
         } else if (position == 1) {
-            return mContext.getString(R.string.category_castles);
+            return mContext.getString ( R.string.category_castles );
         } else if (position == 2) {
-            return mContext.getString(R.string.category_mountains);
+            return mContext.getString ( R.string.category_mountains );
         } else if (position == 3) {
-            return mContext.getString(R.string.category_monasteries);
+            return mContext.getString ( R.string.category_monasteries );
         } else if (position == 4) {
-            return mContext.getString(R.string.category_unesco_sites);
+            return mContext.getString ( R.string.category_unesco_sites );
         } else {
-            return mContext.getString(R.string.category_villages);
+            return mContext.getString ( R.string.category_villages );
         }
     }
 }
